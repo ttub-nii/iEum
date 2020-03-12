@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "idiom" : "universal",
+      "filename" : "subFrami02.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "subFrami02@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "subFrami02@3x.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

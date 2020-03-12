@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "idiom" : "universal",
+      "filename" : "subSubModern.png"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "subSubModern@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "scale" : "3x",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

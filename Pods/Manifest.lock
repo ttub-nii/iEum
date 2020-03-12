@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.8.2)
+  - CHIPageControl (0.1.8):
+    - CHIPageControl/Aji (= 0.1.8)
+    - CHIPageControl/Aleppo (= 0.1.8)
+    - CHIPageControl/Chimayo (= 0.1.8)
+    - CHIPageControl/Fresno (= 0.1.8)
+    - CHIPageControl/Jalapeno (= 0.1.8)
+    - CHIPageControl/Jaloro (= 0.1.8)
+    - CHIPageControl/Paprika (= 0.1.8)
+    - CHIPageControl/Puya (= 0.1.8)
+  - CHIPageControl/Aji (0.1.8)
+  - CHIPageControl/Aleppo (0.1.8)
+  - CHIPageControl/Chimayo (0.1.8)
+  - CHIPageControl/Fresno (0.1.8)
+  - CHIPageControl/Jalapeno (0.1.8)
+  - CHIPageControl/Jaloro (0.1.8)
+  - CHIPageControl/Paprika (0.1.8)
+  - CHIPageControl/Puya (0.1.8)
+  - Hero (1.4.0)
+  - LCAnimatedPageControl (1.1.0)
+  - SwiftGifOrigin (1.7.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - CHIPageControl (~> 0.1.3)
+  - Hero
+  - LCAnimatedPageControl
+  - SwiftGifOrigin (~> 1.7.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CHIPageControl
+    - Hero
+    - LCAnimatedPageControl
+    - SwiftGifOrigin
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CHIPageControl: 76b35c8309d8dd155e869c109cc6ffc0aaa465ff
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  LCAnimatedPageControl: 2b8e3089392476aadea90bdca80564f8a6cb3468
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+
+PODFILE CHECKSUM: a1e8a1cb27356154fca6adfeffe523725005d3e4
+
+COCOAPODS: 1.7.2

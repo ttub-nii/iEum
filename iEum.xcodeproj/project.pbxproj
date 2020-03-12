@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08074D4A22E54588000724AE /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D4922E54588000724AE /* ImageCell.swift */; };
+		08074D4C22E54629000724AE /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D4B22E54629000724AE /* Image.swift */; };
+		08074D4F22E54C96000724AE /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D4E22E54C96000724AE /* UIViewController+Extensions.swift */; };
+		08074D5122E5597E000724AE /* UIViewController+AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D5022E5597E000724AE /* UIViewController+AppDelegate.swift */; };
+		0809156622DC47F1004B59C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809156522DC47F1004B59C6 /* AppDelegate.swift */; };
+		0809156B22DC47F1004B59C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0809156922DC47F1004B59C6 /* Main.storyboard */; };
+		0809156E22DC47F1004B59C6 /* iEum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0809156C22DC47F1004B59C6 /* iEum.xcdatamodeld */; };
+		0809157022DC47F3004B59C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0809156F22DC47F3004B59C6 /* Assets.xcassets */; };
+		0809157F22DD5A0B004B59C6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809157E22DD5A0B004B59C6 /* MainViewController.swift */; };
+		0809158122DD5A1E004B59C6 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809158022DD5A1E004B59C6 /* SubViewController.swift */; };
+		0809158322DD5A29004B59C6 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809158222DD5A29004B59C6 /* MypageViewController.swift */; };
+		0809158922DD9C61004B59C6 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809158822DD9C61004B59C6 /* Work.swift */; };
+		0809158B22DDAD40004B59C6 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809158A22DDAD40004B59C6 /* BannerCell.swift */; };
+		081179BF22DEEFE700D56611 /* iEum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081179BE22DEEFE700D56611 /* iEum.storyboard */; };
+		081179C122DEF01D00D56611 /* iEumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081179C022DEF01D00D56611 /* iEumVC.swift */; };
+		081179C322DEF33D00D56611 /* ieum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 081179C222DEF33D00D56611 /* ieum.gif */; };
+		0815060C236A8790004A68A0 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815060B236A8790004A68A0 /* LoginService.swift */; };
+		0815060E236A8951004A68A0 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815060D236A8951004A68A0 /* NetworkResult.swift */; };
+		08150610236C1066004A68A0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815060F236C1066004A68A0 /* APIConstants.swift */; };
+		08150612236C14ED004A68A0 /* ResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08150611236C14ED004A68A0 /* ResponseString.swift */; };
+		08447EE5236D5E8100A5F2F6 /* ResponseDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */; };
+		08447EE7236D5EC000A5F2F6 /* SignupSerive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08447EE6236D5EC000A5F2F6 /* SignupSerive.swift */; };
+		08B0873022DDB27100F16C99 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0872F22DDB27100F16C99 /* Banner.swift */; };
+		08B0873222DDB5B800F16C99 /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873122DDB5B800F16C99 /* WorkCell.swift */; };
+		08B0873422DEB1C200F16C99 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873322DEB1C200F16C99 /* DetailCell.swift */; };
+		08B0873622DEB24200F16C99 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873522DEB24200F16C99 /* Detail.swift */; };
+		08B0873822DEB50500F16C99 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B0873722DEB50500F16C99 /* Login.storyboard */; };
+		08B0873A22DEBE6A00F16C99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873922DEBE6A00F16C99 /* LoginVC.swift */; };
+		08F4B71422E0577800C4FEFC /* ReplyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4B71322E0577800C4FEFC /* ReplyTVC.swift */; };
+		08F4B71622E05E3500C4FEFC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4B71522E05E3500C4FEFC /* WriteViewController.swift */; };
+		ABF0D1F5974FF8A5C98A6B40 /* Pods_iEum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00D1FB4991FD3105F01072 /* Pods_iEum.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0499FF9157E5C95A1D39EE15 /* Pods-iEum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEum.debug.xcconfig"; path = "Target Support Files/Pods-iEum/Pods-iEum.debug.xcconfig"; sourceTree = "<group>"; };
+		08074D4922E54588000724AE /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		08074D4B22E54629000724AE /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		08074D4E22E54C96000724AE /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		08074D5022E5597E000724AE /* UIViewController+AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AppDelegate.swift"; sourceTree = "<group>"; };
+		0809156222DC47F1004B59C6 /* iEum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iEum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0809156522DC47F1004B59C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0809156A22DC47F1004B59C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0809156D22DC47F1004B59C6 /* iEum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iEum.xcdatamodel; sourceTree = "<group>"; };
+		0809156F22DC47F3004B59C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0809157422DC47F3004B59C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0809157E22DD5A0B004B59C6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = iEum/Resources/ViewControllers/MainViewController.swift; sourceTree = SOURCE_ROOT; };
+		0809158022DD5A1E004B59C6 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		0809158222DD5A29004B59C6 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		0809158822DD9C61004B59C6 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		0809158A22DDAD40004B59C6 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		081179BE22DEEFE700D56611 /* iEum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iEum.storyboard; sourceTree = "<group>"; };
+		081179C022DEF01D00D56611 /* iEumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iEumVC.swift; sourceTree = "<group>"; };
+		081179C222DEF33D00D56611 /* ieum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ieum.gif; path = Assets.xcassets/ieum.gif; sourceTree = "<group>"; };
+		0815060B236A8790004A68A0 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		0815060D236A8951004A68A0 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		0815060F236C1066004A68A0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		08150611236C14ED004A68A0 /* ResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseString.swift; sourceTree = "<group>"; };
+		08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDefault.swift; sourceTree = "<group>"; };
+		08447EE6236D5EC000A5F2F6 /* SignupSerive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSerive.swift; sourceTree = "<group>"; };
+		08B0872F22DDB27100F16C99 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		08B0873122DDB5B800F16C99 /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
+		08B0873322DEB1C200F16C99 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		08B0873522DEB24200F16C99 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		08B0873722DEB50500F16C99 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		08B0873922DEBE6A00F16C99 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		08F4B71322E0577800C4FEFC /* ReplyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTVC.swift; sourceTree = "<group>"; };
+		08F4B71522E05E3500C4FEFC /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		C13C787A81702ED7834CDC9D /* Pods-iEum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEum.release.xcconfig"; path = "Target Support Files/Pods-iEum/Pods-iEum.release.xcconfig"; sourceTree = "<group>"; };
+		DA00D1FB4991FD3105F01072 /* Pods_iEum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iEum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0809155F22DC47F1004B59C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF0D1F5974FF8A5C98A6B40 /* Pods_iEum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08074D4D22E54C72000724AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				08074D5022E5597E000724AE /* UIViewController+AppDelegate.swift */,
+				08074D4E22E54C96000724AE /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0809155922DC47F1004B59C6 = {
+			isa = PBXGroup;
+			children = (
+				0809156422DC47F1004B59C6 /* iEum */,
+				0809156322DC47F1004B59C6 /* Products */,
+				C43CF2688FAAFAD57B3ADB42 /* Pods */,
+				5B5F1EF3A312DD21DB3FC6F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0809156322DC47F1004B59C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0809156222DC47F1004B59C6 /* iEum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0809156422DC47F1004B59C6 /* iEum */ = {
+			isa = PBXGroup;
+			children = (
+				0809157B22DC4834004B59C6 /* Sources */,
+				0809157A22DC482B004B59C6 /* Resources */,
+				0809157422DC47F3004B59C6 /* Info.plist */,
+				0809156C22DC47F1004B59C6 /* iEum.xcdatamodeld */,
+			);
+			path = iEum;
+			sourceTree = "<group>";
+		};
+		0809157A22DC482B004B59C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0815060A236A876B004A68A0 /* APIServices */,
+				0809158522DD9A7A004B59C6 /* Model */,
+				0809157D22DC4848004B59C6 /* Storyboard */,
+				0809157C22DC4842004B59C6 /* ViewControllers */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0809157B22DC4834004B59C6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0809156F22DC47F3004B59C6 /* Assets.xcassets */,
+				081179C222DEF33D00D56611 /* ieum.gif */,
+				08074D4D22E54C72000724AE /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0809157C22DC4842004B59C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0809156522DC47F1004B59C6 /* AppDelegate.swift */,
+				0809157E22DD5A0B004B59C6 /* MainViewController.swift */,
+				0809158022DD5A1E004B59C6 /* SubViewController.swift */,
+				0809158222DD5A29004B59C6 /* MypageViewController.swift */,
+				08B0873922DEBE6A00F16C99 /* LoginVC.swift */,
+				08F4B71522E05E3500C4FEFC /* WriteViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0809157D22DC4848004B59C6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				081179BE22DEEFE700D56611 /* iEum.storyboard */,
+				08B0873722DEB50500F16C99 /* Login.storyboard */,
+				0809156922DC47F1004B59C6 /* Main.storyboard */,
+				081179C022DEF01D00D56611 /* iEumVC.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0809158522DD9A7A004B59C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0809158822DD9C61004B59C6 /* Work.swift */,
+				0809158A22DDAD40004B59C6 /* BannerCell.swift */,
+				08B0872F22DDB27100F16C99 /* Banner.swift */,
+				08B0873122DDB5B800F16C99 /* WorkCell.swift */,
+				08B0873322DEB1C200F16C99 /* DetailCell.swift */,
+				08B0873522DEB24200F16C99 /* Detail.swift */,
+				08F4B71322E0577800C4FEFC /* ReplyTVC.swift */,
+				08074D4922E54588000724AE /* ImageCell.swift */,
+				08074D4B22E54629000724AE /* Image.swift */,
+				08150611236C14ED004A68A0 /* ResponseString.swift */,
+				08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0815060A236A876B004A68A0 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				0815060B236A8790004A68A0 /* LoginService.swift */,
+				08447EE6236D5EC000A5F2F6 /* SignupSerive.swift */,
+				0815060F236C1066004A68A0 /* APIConstants.swift */,
+				0815060D236A8951004A68A0 /* NetworkResult.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		5B5F1EF3A312DD21DB3FC6F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA00D1FB4991FD3105F01072 /* Pods_iEum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C43CF2688FAAFAD57B3ADB42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0499FF9157E5C95A1D39EE15 /* Pods-iEum.debug.xcconfig */,
+				C13C787A81702ED7834CDC9D /* Pods-iEum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0809156122DC47F1004B59C6 /* iEum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0809157722DC47F3004B59C6 /* Build configuration list for PBXNativeTarget "iEum" */;
+			buildPhases = (
+				FF39F137CDFAD43376D896F2 /* [CP] Check Pods Manifest.lock */,
+				0809155E22DC47F1004B59C6 /* Sources */,
+				0809155F22DC47F1004B59C6 /* Frameworks */,
+				0809156022DC47F1004B59C6 /* Resources */,
+				4FB1585FA2A44A38E4FBFC9C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iEum;
+			productName = iEum;
+			productReference = 0809156222DC47F1004B59C6 /* iEum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0809155A22DC47F1004B59C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "황수빈";
+				TargetAttributes = {
+					0809156122DC47F1004B59C6 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 0809155D22DC47F1004B59C6 /* Build configuration list for PBXProject "iEum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0809155922DC47F1004B59C6;
+			productRefGroup = 0809156322DC47F1004B59C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0809156122DC47F1004B59C6 /* iEum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0809156022DC47F1004B59C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B0873822DEB50500F16C99 /* Login.storyboard in Resources */,
+				0809157022DC47F3004B59C6 /* Assets.xcassets in Resources */,
+				081179C322DEF33D00D56611 /* ieum.gif in Resources */,
+				081179BF22DEEFE700D56611 /* iEum.storyboard in Resources */,
+				0809156B22DC47F1004B59C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FB1585FA2A44A38E4FBFC9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iEum/Pods-iEum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iEum/Pods-iEum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iEum/Pods-iEum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF39F137CDFAD43376D896F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iEum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0809155E22DC47F1004B59C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B0873422DEB1C200F16C99 /* DetailCell.swift in Sources */,
+				0809158322DD5A29004B59C6 /* MypageViewController.swift in Sources */,
+				08B0873A22DEBE6A00F16C99 /* LoginVC.swift in Sources */,
+				08F4B71622E05E3500C4FEFC /* WriteViewController.swift in Sources */,
+				08074D4F22E54C96000724AE /* UIViewController+Extensions.swift in Sources */,
+				08B0873222DDB5B800F16C99 /* WorkCell.swift in Sources */,
+				0815060E236A8951004A68A0 /* NetworkResult.swift in Sources */,
+				0809158922DD9C61004B59C6 /* Work.swift in Sources */,
+				0815060C236A8790004A68A0 /* LoginService.swift in Sources */,
+				08B0873022DDB27100F16C99 /* Banner.swift in Sources */,
+				08150612236C14ED004A68A0 /* ResponseString.swift in Sources */,
+				081179C122DEF01D00D56611 /* iEumVC.swift in Sources */,
+				0809157F22DD5A0B004B59C6 /* MainViewController.swift in Sources */,
+				08150610236C1066004A68A0 /* APIConstants.swift in Sources */,
+				0809156E22DC47F1004B59C6 /* iEum.xcdatamodeld in Sources */,
+				0809156622DC47F1004B59C6 /* AppDelegate.swift in Sources */,
+				08074D4C22E54629000724AE /* Image.swift in Sources */,
+				08F4B71422E0577800C4FEFC /* ReplyTVC.swift in Sources */,
+				0809158B22DDAD40004B59C6 /* BannerCell.swift in Sources */,
+				08074D5122E5597E000724AE /* UIViewController+AppDelegate.swift in Sources */,
+				08447EE7236D5EC000A5F2F6 /* SignupSerive.swift in Sources */,
+				08447EE5236D5E8100A5F2F6 /* ResponseDefault.swift in Sources */,
+				08074D4A22E54588000724AE /* ImageCell.swift in Sources */,
+				08B0873622DEB24200F16C99 /* Detail.swift in Sources */,
+				0809158122DD5A1E004B59C6 /* SubViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0809156922DC47F1004B59C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0809156A22DC47F1004B59C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0809157522DC47F3004B59C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0809157622DC47F3004B59C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0809157822DC47F3004B59C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0499FF9157E5C95A1D39EE15 /* Pods-iEum.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39X44DH4RN;
+				INFOPLIST_FILE = iEum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SOPT.iEum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0809157922DC47F3004B59C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13C787A81702ED7834CDC9D /* Pods-iEum.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39X44DH4RN;
+				INFOPLIST_FILE = iEum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SOPT.iEum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0809155D22DC47F1004B59C6 /* Build configuration list for PBXProject "iEum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0809157522DC47F3004B59C6 /* Debug */,
+				0809157622DC47F3004B59C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0809157722DC47F3004B59C6 /* Build configuration list for PBXNativeTarget "iEum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0809157822DC47F3004B59C6 /* Debug */,
+				0809157922DC47F3004B59C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0809156C22DC47F1004B59C6 /* iEum.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0809156D22DC47F1004B59C6 /* iEum.xcdatamodel */,
+			);
+			currentVersion = 0809156D22DC47F1004B59C6 /* iEum.xcdatamodel */;
+			path = iEum.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0809155A22DC47F1004B59C6 /* Project object */;
+}
