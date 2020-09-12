@@ -22,10 +22,10 @@ class WriteViewController: UIViewController, UIImagePickerControllerDelegate, UI
         super.viewDidLoad()
 
         initGestureRecognizer()
-        // Do any additional setup after loading the view.
-        navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navigationBar.shadowImage = UIImage()
-        navigationBar.isTranslucent = false
+        setNavigationBarClear()
+//        navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//        navigationBar.shadowImage = UIImage()
+//        navigationBar.isTranslucent = false
     }
     
     func textFieldShouldReturn(_ textField : UITextField) -> Bool {

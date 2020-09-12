@@ -16,7 +16,10 @@ class iEumVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        showGif()
+    }
+    
+    func showGif() {
         self.splashImg.image = UIImage.gif(name: "ieum")
         
         do {
@@ -28,7 +31,6 @@ class iEumVC: UIViewController {
         }
         
         perform(#selector(iEumVC.showTutorial), with: nil, afterDelay: 3)
-        
     }
     
     // 토큰이 있는 경우와 없는 경우에 따라 분기처리.

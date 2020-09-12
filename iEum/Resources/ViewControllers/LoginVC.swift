@@ -19,13 +19,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initGestureRecognizer()
-        // Do any additional setup after loading the view.
-        let myColor = UIColor.white
-        
-        loginBtn.layer.cornerRadius = 17;
-        loginBtn.layer.borderWidth = 1.0;
-        loginBtn.layer.borderColor = myColor.cgColor
-        loginBtn.layer.masksToBounds = true;
+        setUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +28,15 @@ class LoginVC: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         unregisterForKeyboardNotifications()
+    }
+    
+    func setUI() {
+        let myColor = UIColor.white
+        
+        loginBtn.layer.cornerRadius = 17;
+        loginBtn.layer.borderWidth = 1.0;
+        loginBtn.layer.borderColor = myColor.cgColor
+        loginBtn.layer.masksToBounds = true;
     }
     
     func textFieldShouldReturn(_ textField : UITextField) -> Bool {
@@ -52,38 +55,10 @@ class LoginVC: UIViewController {
         guard let id = loginUserid.text else { return }
         guard let pwd = loginPassword.text else { return }
         
-        LoginService.shared.login(id, pwd) {
-            data in
-            
-            switch data {
-                
-            case .success(let data):
-                
-                // DataClass 에서 받은 유저 정보 반환
-                let user_data = data as! DataClass
-                
-                // 사용자의 토큰, 이름, 전화번호 받아오기
-                // 비밀번호는 안 받아와도 됨
-                UserDefaults.standard.set(user_data.userIdx, forKey: "token")
-                UserDefaults.standard.set(user_data.name, forKey: "name")
-                UserDefaults.standard.set(user_data.phone, forKey: "phone")
-                
-                let main = storyboard.instantiateViewController(withIdentifier: "TabBarVC")
-                self.present(main, animated: true)
-                
-            case .requestErr(let message):
-                self.simpleAlert(title: "로그인 실패", message: "\(message)")
-                
-            case .pathErr:
-                print(".pathErr")
-                self.simpleAlert(title: "로그인 실패", message: "존재하지 않는 유저입니다.")
-                
-            case .serverErr:
-                print(".serverErr")
-                
-            case .networkFail:
-                self.simpleAlert(title: "로그인 실패", message: "네트워크 상태를 확인해주세요.")
-            }
+        if id != "" && pwd != "" {
+            let main = storyboard.instantiateViewController(withIdentifier: "TabBarVC")
+            main.modalPresentationStyle = .fullScreen
+            self.present(main, animated: true)
         }
     }
 }
@@ -150,7 +125,7 @@ extension LoginVC: UIGestureRecognizerDelegate {
             
             // 원래대로 돌아가도록
             self.logoImgView.alpha = 1.0
-            self.stackViewCenterY.constant = 0
+            self.stackViewCenterY.constant = 20
         })
         
         self.view.layoutIfNeeded()

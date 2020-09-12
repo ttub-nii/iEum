@@ -18,15 +18,14 @@ class MypageViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navigationBar.shadowImage = UIImage()
-        navigationBar.isTranslucent = false
+        setNavigationBarClear()
+//        navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//        navigationBar.shadowImage = UIImage()
+//        navigationBar.isTranslucent = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.detailList = ["\(appDelegate.scrap)개", "\(appDelegate.my)개", "1.0"] // instance가 만들어져야 appDelegate에서 불러올 수 있음
+        self.detailList = ["\(appDelegate.scrap)개", "\(appDelegate.my)개", "1.0"]
         myTableView.reloadData()
     }
     

@@ -28,11 +28,6 @@ class LoginService {
         Alamofire.request(APIConstants.LoginURL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header)
             .responseData { response in
                 
-//                print("request", response.request)
-//                print("response", response.response)
-//                print("data", response.data)
-//                print("result", response.result)
-                
                 // parameter 위치
                 switch response.result {
                     

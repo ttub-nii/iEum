@@ -19,8 +19,6 @@ class SubViewController: UIViewController {
     @IBOutlet var viewlikeText: UIView!
     @IBOutlet var replyView: UIView!
     @IBOutlet var replyText: UITextField!
-    @IBOutlet var replyYcenter: NSLayoutConstraint!
-    
     @IBOutlet var detailCV: UICollectionView!
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -36,22 +34,12 @@ class SubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         setNavigationBarTitle()
         initGestureRecognizer()
-        
+        setUI()
         detailCV.dataSource = self
         replyTable.dataSource = self
         scrollView.delegate = self
-        
-        let yourColor = UIColor(red: 195.0/255, green: 195.0/255, blue: 195.0/255, alpha: 1.0)
-        viewlikeText.layer.borderWidth = 1.0
-        viewlikeText.layer.borderColor = yourColor.cgColor
-        viewlikeText.layer.cornerRadius = 20
-        viewlikeText.layer.masksToBounds = true
-        
-        replyBtn.layer.cornerRadius = 16
-        replyBtn.layer.masksToBounds = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,11 +56,21 @@ class SubViewController: UIViewController {
         navigationItem.titleView = UIImageView(image: image)
     }
     
+    func setUI() {
+        let yourColor = UIColor(red: 195.0/255, green: 195.0/255, blue: 195.0/255, alpha: 1.0)
+        viewlikeText.layer.borderWidth = 1.0
+        viewlikeText.layer.borderColor = yourColor.cgColor
+        viewlikeText.layer.cornerRadius = 20
+        viewlikeText.layer.masksToBounds = true
+        
+        replyBtn.layer.cornerRadius = 16
+        replyBtn.layer.masksToBounds = true
+    }
+    
     // 댓글쓰기 창 보이고 싶다.
     func showMenuView() {
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
             
-            // print("댓글창보임")
             self.replyView.transform = CGAffineTransform(translationX: 0, y: 100)
         })
         
@@ -82,14 +80,12 @@ class SubViewController: UIViewController {
     // 댓글쓰기 창 가리고 싶다.
     func hideMenuView() {
         
-        // print("댓글창 안보임")
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
             self.replyView.transform = .identity
         })
         
         self.view.layoutIfNeeded()
     }
-    
     
     @IBAction func replyBtn(_ sender: UIButton) {
         replyList.append("\(replyText.text!)")
@@ -121,7 +117,6 @@ class SubViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         sender.isSelected = !sender.isSelected
         
-        //만약 선택되어 있으면
         if sender.isSelected {
             appDelegate.scrap += 1
         }
@@ -140,11 +135,9 @@ extension SubViewController : UIScrollViewDelegate {
         let yVelocity = self.scrollView.panGestureRecognizer .velocity(in: scrollView).y
         
         if yVelocity > 0 {
-            // print("올림")
             hideMenuView()
             
         } else if yVelocity < 0 {
-            // print("내림")
             showMenuView()
         }
     }
@@ -153,7 +146,6 @@ extension SubViewController : UIScrollViewDelegate {
 extension SubViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-
         return 1
     }
     
@@ -256,13 +248,10 @@ extension SubViewController: UIGestureRecognizerDelegate {
         self.view.layoutIfNeeded()
     }
     
-    
-    // observer
     func registerForKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-    
     
     func unregisterForKeyboardNotifications() {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
