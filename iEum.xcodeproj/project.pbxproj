@@ -10,27 +10,26 @@
 		08074D4A22E54588000724AE /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D4922E54588000724AE /* ImageCell.swift */; };
 		08074D4C22E54629000724AE /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D4B22E54629000724AE /* Image.swift */; };
 		08074D4F22E54C96000724AE /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D4E22E54C96000724AE /* UIViewController+Extensions.swift */; };
-		08074D5122E5597E000724AE /* UIViewController+AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D5022E5597E000724AE /* UIViewController+AppDelegate.swift */; };
+		08074D5122E5597E000724AE /* AppDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08074D5022E5597E000724AE /* AppDelegate+Extensions.swift */; };
 		0809156622DC47F1004B59C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809156522DC47F1004B59C6 /* AppDelegate.swift */; };
 		0809156B22DC47F1004B59C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0809156922DC47F1004B59C6 /* Main.storyboard */; };
 		0809156E22DC47F1004B59C6 /* iEum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0809156C22DC47F1004B59C6 /* iEum.xcdatamodeld */; };
 		0809157022DC47F3004B59C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0809156F22DC47F3004B59C6 /* Assets.xcassets */; };
-		0809157F22DD5A0B004B59C6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809157E22DD5A0B004B59C6 /* MainViewController.swift */; };
+		0809157F22DD5A0B004B59C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809157E22DD5A0B004B59C6 /* HomeViewController.swift */; };
 		0809158122DD5A1E004B59C6 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809158022DD5A1E004B59C6 /* SubViewController.swift */; };
 		0809158322DD5A29004B59C6 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809158222DD5A29004B59C6 /* MypageViewController.swift */; };
 		0809158922DD9C61004B59C6 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809158822DD9C61004B59C6 /* Work.swift */; };
-		0809158B22DDAD40004B59C6 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0809158A22DDAD40004B59C6 /* BannerCell.swift */; };
-		081179BF22DEEFE700D56611 /* iEum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081179BE22DEEFE700D56611 /* iEum.storyboard */; };
-		081179C122DEF01D00D56611 /* iEumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081179C022DEF01D00D56611 /* iEumVC.swift */; };
+		081179BF22DEEFE700D56611 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081179BE22DEEFE700D56611 /* Tutorial.storyboard */; };
+		081179C122DEF01D00D56611 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081179C022DEF01D00D56611 /* TutorialViewController.swift */; };
 		081179C322DEF33D00D56611 /* ieum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 081179C222DEF33D00D56611 /* ieum.gif */; };
-		08150612236C14ED004A68A0 /* ResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08150611236C14ED004A68A0 /* ResponseString.swift */; };
-		08447EE5236D5E8100A5F2F6 /* ResponseDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */; };
 		08B0873022DDB27100F16C99 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0872F22DDB27100F16C99 /* Banner.swift */; };
-		08B0873222DDB5B800F16C99 /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873122DDB5B800F16C99 /* WorkCell.swift */; };
 		08B0873422DEB1C200F16C99 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873322DEB1C200F16C99 /* DetailCell.swift */; };
 		08B0873622DEB24200F16C99 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873522DEB24200F16C99 /* Detail.swift */; };
 		08B0873822DEB50500F16C99 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B0873722DEB50500F16C99 /* Login.storyboard */; };
-		08B0873A22DEBE6A00F16C99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873922DEBE6A00F16C99 /* LoginVC.swift */; };
+		08B0873A22DEBE6A00F16C99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873922DEBE6A00F16C99 /* LoginViewController.swift */; };
+		08ECA525250D3B9000B6C0D1 /* BannerCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECA523250D3B9000B6C0D1 /* BannerCVCell.swift */; };
+		08ECA526250D3B9000B6C0D1 /* PictureCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECA524250D3B9000B6C0D1 /* PictureCVCell.swift */; };
+		08ECA530250D5DEE00B6C0D1 /* BannerDetailCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECA52F250D5DEE00B6C0D1 /* BannerDetailCVCell.swift */; };
 		08F4B71422E0577800C4FEFC /* ReplyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4B71322E0577800C4FEFC /* ReplyTVC.swift */; };
 		08F4B71622E05E3500C4FEFC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4B71522E05E3500C4FEFC /* WriteViewController.swift */; };
 		ABF0D1F5974FF8A5C98A6B40 /* Pods_iEum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00D1FB4991FD3105F01072 /* Pods_iEum.framework */; };
@@ -41,29 +40,28 @@
 		08074D4922E54588000724AE /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		08074D4B22E54629000724AE /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		08074D4E22E54C96000724AE /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		08074D5022E5597E000724AE /* UIViewController+AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AppDelegate.swift"; sourceTree = "<group>"; };
+		08074D5022E5597E000724AE /* AppDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extensions.swift"; sourceTree = "<group>"; };
 		0809156222DC47F1004B59C6 /* iEum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iEum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0809156522DC47F1004B59C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0809156A22DC47F1004B59C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0809156D22DC47F1004B59C6 /* iEum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iEum.xcdatamodel; sourceTree = "<group>"; };
 		0809156F22DC47F3004B59C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0809157422DC47F3004B59C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0809157E22DD5A0B004B59C6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = iEum/Resources/ViewControllers/MainViewController.swift; sourceTree = SOURCE_ROOT; };
+		0809157E22DD5A0B004B59C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = iEum/Resources/Scene/Main/Home/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		0809158022DD5A1E004B59C6 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		0809158222DD5A29004B59C6 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		0809158822DD9C61004B59C6 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
-		0809158A22DDAD40004B59C6 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
-		081179BE22DEEFE700D56611 /* iEum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iEum.storyboard; sourceTree = "<group>"; };
-		081179C022DEF01D00D56611 /* iEumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iEumVC.swift; sourceTree = "<group>"; };
+		081179BE22DEEFE700D56611 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		081179C022DEF01D00D56611 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		081179C222DEF33D00D56611 /* ieum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ieum.gif; path = Assets.xcassets/ieum.gif; sourceTree = "<group>"; };
-		08150611236C14ED004A68A0 /* ResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseString.swift; sourceTree = "<group>"; };
-		08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDefault.swift; sourceTree = "<group>"; };
 		08B0872F22DDB27100F16C99 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
-		08B0873122DDB5B800F16C99 /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
 		08B0873322DEB1C200F16C99 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		08B0873522DEB24200F16C99 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		08B0873722DEB50500F16C99 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		08B0873922DEBE6A00F16C99 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		08B0873922DEBE6A00F16C99 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		08ECA523250D3B9000B6C0D1 /* BannerCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCVCell.swift; sourceTree = "<group>"; };
+		08ECA524250D3B9000B6C0D1 /* PictureCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCVCell.swift; sourceTree = "<group>"; };
+		08ECA52F250D5DEE00B6C0D1 /* BannerDetailCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerDetailCVCell.swift; sourceTree = "<group>"; };
 		08F4B71322E0577800C4FEFC /* ReplyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTVC.swift; sourceTree = "<group>"; };
 		08F4B71522E05E3500C4FEFC /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		C13C787A81702ED7834CDC9D /* Pods-iEum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEum.release.xcconfig"; path = "Target Support Files/Pods-iEum/Pods-iEum.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +83,7 @@
 		08074D4D22E54C72000724AE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				08074D5022E5597E000724AE /* UIViewController+AppDelegate.swift */,
+				08074D5022E5597E000724AE /* AppDelegate+Extensions.swift */,
 				08074D4E22E54C96000724AE /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
@@ -124,8 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				0809158522DD9A7A004B59C6 /* Model */,
-				0809157D22DC4848004B59C6 /* Storyboard */,
-				0809157C22DC4842004B59C6 /* ViewControllers */,
+				08ECA507250D224B00B6C0D1 /* Support */,
+				08ECA503250D21EF00B6C0D1 /* Scene */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -140,46 +138,117 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		0809157C22DC4842004B59C6 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				0809156522DC47F1004B59C6 /* AppDelegate.swift */,
-				0809157E22DD5A0B004B59C6 /* MainViewController.swift */,
-				0809158022DD5A1E004B59C6 /* SubViewController.swift */,
-				0809158222DD5A29004B59C6 /* MypageViewController.swift */,
-				08B0873922DEBE6A00F16C99 /* LoginVC.swift */,
-				08F4B71522E05E3500C4FEFC /* WriteViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		0809157D22DC4848004B59C6 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				081179BE22DEEFE700D56611 /* iEum.storyboard */,
-				08B0873722DEB50500F16C99 /* Login.storyboard */,
-				0809156922DC47F1004B59C6 /* Main.storyboard */,
-				081179C022DEF01D00D56611 /* iEumVC.swift */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
 		0809158522DD9A7A004B59C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				0809158822DD9C61004B59C6 /* Work.swift */,
-				0809158A22DDAD40004B59C6 /* BannerCell.swift */,
 				08B0872F22DDB27100F16C99 /* Banner.swift */,
-				08B0873122DDB5B800F16C99 /* WorkCell.swift */,
-				08B0873322DEB1C200F16C99 /* DetailCell.swift */,
 				08B0873522DEB24200F16C99 /* Detail.swift */,
 				08F4B71322E0577800C4FEFC /* ReplyTVC.swift */,
-				08074D4922E54588000724AE /* ImageCell.swift */,
 				08074D4B22E54629000724AE /* Image.swift */,
-				08150611236C14ED004A68A0 /* ResponseString.swift */,
-				08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		08ECA502250D21D800B6C0D1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				08074D4922E54588000724AE /* ImageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		08ECA503250D21EF00B6C0D1 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				08ECA50A250D229500B6C0D1 /* Detail */,
+				08ECA504250D21F600B6C0D1 /* Tutorial */,
+				08ECA506250D223900B6C0D1 /* Login */,
+				08ECA505250D221200B6C0D1 /* Main */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		08ECA504250D21F600B6C0D1 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				081179BE22DEEFE700D56611 /* Tutorial.storyboard */,
+				081179C022DEF01D00D56611 /* TutorialViewController.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		08ECA505250D221200B6C0D1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0809156922DC47F1004B59C6 /* Main.storyboard */,
+				08ECA50B250D22F600B6C0D1 /* Home */,
+				08ECA50C250D232700B6C0D1 /* Write */,
+				08ECA509250D228000B6C0D1 /* Mypage */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		08ECA506250D223900B6C0D1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				08B0873722DEB50500F16C99 /* Login.storyboard */,
+				08B0873922DEBE6A00F16C99 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		08ECA507250D224B00B6C0D1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0809156522DC47F1004B59C6 /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		08ECA508250D227500B6C0D1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				08ECA523250D3B9000B6C0D1 /* BannerCVCell.swift */,
+				08ECA52F250D5DEE00B6C0D1 /* BannerDetailCVCell.swift */,
+				08ECA524250D3B9000B6C0D1 /* PictureCVCell.swift */,
+				08B0873322DEB1C200F16C99 /* DetailCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		08ECA509250D228000B6C0D1 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				0809158222DD5A29004B59C6 /* MypageViewController.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		08ECA50A250D229500B6C0D1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		08ECA50B250D22F600B6C0D1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				08ECA508250D227500B6C0D1 /* Cell */,
+				0809157E22DD5A0B004B59C6 /* HomeViewController.swift */,
+				0809158022DD5A1E004B59C6 /* SubViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		08ECA50C250D232700B6C0D1 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				08ECA502250D21D800B6C0D1 /* Cell */,
+				08F4B71522E05E3500C4FEFC /* WriteViewController.swift */,
+			);
+			path = Write;
 			sourceTree = "<group>";
 		};
 		5B5F1EF3A312DD21DB3FC6F5 /* Frameworks */ = {
@@ -262,7 +331,7 @@
 				08B0873822DEB50500F16C99 /* Login.storyboard in Resources */,
 				0809157022DC47F3004B59C6 /* Assets.xcassets in Resources */,
 				081179C322DEF33D00D56611 /* ieum.gif in Resources */,
-				081179BF22DEEFE700D56611 /* iEum.storyboard in Resources */,
+				081179BF22DEEFE700D56611 /* Tutorial.storyboard in Resources */,
 				0809156B22DC47F1004B59C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,25 +387,24 @@
 			files = (
 				08B0873422DEB1C200F16C99 /* DetailCell.swift in Sources */,
 				0809158322DD5A29004B59C6 /* MypageViewController.swift in Sources */,
-				08B0873A22DEBE6A00F16C99 /* LoginVC.swift in Sources */,
+				08B0873A22DEBE6A00F16C99 /* LoginViewController.swift in Sources */,
 				08F4B71622E05E3500C4FEFC /* WriteViewController.swift in Sources */,
 				08074D4F22E54C96000724AE /* UIViewController+Extensions.swift in Sources */,
-				08B0873222DDB5B800F16C99 /* WorkCell.swift in Sources */,
+				08ECA526250D3B9000B6C0D1 /* PictureCVCell.swift in Sources */,
 				0809158922DD9C61004B59C6 /* Work.swift in Sources */,
 				08B0873022DDB27100F16C99 /* Banner.swift in Sources */,
-				08150612236C14ED004A68A0 /* ResponseString.swift in Sources */,
-				081179C122DEF01D00D56611 /* iEumVC.swift in Sources */,
-				0809157F22DD5A0B004B59C6 /* MainViewController.swift in Sources */,
+				081179C122DEF01D00D56611 /* TutorialViewController.swift in Sources */,
+				0809157F22DD5A0B004B59C6 /* HomeViewController.swift in Sources */,
 				0809156E22DC47F1004B59C6 /* iEum.xcdatamodeld in Sources */,
 				0809156622DC47F1004B59C6 /* AppDelegate.swift in Sources */,
 				08074D4C22E54629000724AE /* Image.swift in Sources */,
 				08F4B71422E0577800C4FEFC /* ReplyTVC.swift in Sources */,
-				0809158B22DDAD40004B59C6 /* BannerCell.swift in Sources */,
-				08074D5122E5597E000724AE /* UIViewController+AppDelegate.swift in Sources */,
-				08447EE5236D5E8100A5F2F6 /* ResponseDefault.swift in Sources */,
+				08074D5122E5597E000724AE /* AppDelegate+Extensions.swift in Sources */,
 				08074D4A22E54588000724AE /* ImageCell.swift in Sources */,
 				08B0873622DEB24200F16C99 /* Detail.swift in Sources */,
 				0809158122DD5A1E004B59C6 /* SubViewController.swift in Sources */,
+				08ECA530250D5DEE00B6C0D1 /* BannerDetailCVCell.swift in Sources */,
+				08ECA525250D3B9000B6C0D1 /* BannerCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

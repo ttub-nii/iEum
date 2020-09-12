@@ -1,5 +1,5 @@
 //
-//  DetailCell.swift
+//  DetailCVCell.swift
 //  iEum
 //
 //  Created by 황수빈 on 17/07/2019.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DetailCell: UICollectionViewCell {
+class DetailCVCell: UICollectionViewCell {
     var workIdx: Int?
     @IBOutlet var detailImg: UIImageView!
 }

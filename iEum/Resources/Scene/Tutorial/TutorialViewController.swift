@@ -1,5 +1,5 @@
 //
-//  iEumVC.swift
+//  TutorialViewController.swift
 //  iEum
 //
 //  Created by 황수빈 on 17/07/2019.
@@ -10,8 +10,8 @@ import UIKit
 import SwiftGifOrigin
 import SwiftOverlayShims
 
-class iEumVC: UIViewController {
-
+class TutorialViewController: UIViewController {
+    
     @IBOutlet var splashImg: UIImageView!
     
     override func viewDidLoad() {
@@ -25,19 +25,16 @@ class iEumVC: UIViewController {
         do {
             let imageData = try Data(contentsOf: Bundle.main.url(forResource: "ieum", withExtension: "gif")!)
             self.splashImg.image = UIImage.gif(data: imageData)
-            
         } catch {
             print(error)
         }
-        
-        perform(#selector(iEumVC.showTutorial), with: nil, afterDelay: 3)
+        perform(#selector(TutorialViewController.showTutorial), with: nil, afterDelay: 3)
     }
     
-    // 토큰이 있는 경우와 없는 경우에 따라 분기처리.
     @objc func showTutorial() {
-            // 토큰이 없는 경우 튜토리얼로 이동
-            let storyboard = UIStoryboard.init(name: "Login", bundle: nil)
-            let login = storyboard.instantiateViewController(withIdentifier: "LoginVC")
-            present(login, animated: true)
+        let storyboard = UIStoryboard.init(name: "Login", bundle: .main)
+        let login = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        login.modalPresentationStyle = .fullScreen
+        present(login, animated: true)
     }
 }

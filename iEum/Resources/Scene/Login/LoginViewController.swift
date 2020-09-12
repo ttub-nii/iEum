@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet var loginBtn: UIButton!
     @IBOutlet var loginUserid: UITextField!
@@ -64,7 +64,7 @@ class LoginVC: UIViewController {
 }
 
 // 키보드 때문에 가려지지 않게 조정하는 extension
-extension LoginVC: UIGestureRecognizerDelegate {
+extension LoginViewController: UIGestureRecognizerDelegate {
     
     func initGestureRecognizer() {
         let textFieldTap = UITapGestureRecognizer(target: self, action: #selector(handleTapTextField(_:)))
@@ -72,27 +72,22 @@ extension LoginVC: UIGestureRecognizerDelegate {
         view.addGestureRecognizer(textFieldTap)
     }
     
-    // 다른 위치 탭했을 때 키보드 없어지는 코드
     @objc func handleTapTextField(_ sender: UITapGestureRecognizer) {
         self.loginUserid.resignFirstResponder()
         self.loginPassword.resignFirstResponder()
     }
     
-    
     func gestureRecognizer(_ gestrueRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if (touch.view?.isDescendant(of: loginUserid))! || (touch.view?.isDescendant(of: loginPassword))! {
-            
             return false
         }
         return true
     }
     
-    // keyboard가 보여질 때 어떤 동작을 수행
     @objc func keyboardWillShow(_ notification: NSNotification) {
         
         guard let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double else { return }
         guard let curve = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt else { return }
-        
         guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
         
         let keyboardHeight: CGFloat // 키보드의 높이
@@ -113,7 +108,6 @@ extension LoginVC: UIGestureRecognizerDelegate {
             // +로 갈수록 y값이 내려가고 -로 갈수록 y값이 올라간다.
             self.stackViewCenterY.constant = -keyboardHeight/2 + 50
         })
-        
         self.view.layoutIfNeeded()
     }
     
@@ -127,17 +121,13 @@ extension LoginVC: UIGestureRecognizerDelegate {
             self.logoImgView.alpha = 1.0
             self.stackViewCenterY.constant = 20
         })
-        
         self.view.layoutIfNeeded()
     }
     
-    
-    // observer
     func registerForKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-    
     
     func unregisterForKeyboardNotifications() {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)

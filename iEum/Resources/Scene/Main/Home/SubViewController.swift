@@ -33,8 +33,7 @@ class SubViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setNavigationBarTitle()
+        
         initGestureRecognizer()
         setUI()
         detailCV.dataSource = self
@@ -43,17 +42,13 @@ class SubViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
         setDetailData()
         registerForKeyboardNotifications()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         unregisterForKeyboardNotifications()
-    }
-    
-    func setNavigationBarTitle() {
-        let image = UIImage(named: "logoImg")
-        navigationItem.titleView = UIImageView(image: image)
     }
     
     func setUI() {
@@ -150,10 +145,9 @@ extension SubViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailCell", for: indexPath) as! DetailCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailCVCell", for: indexPath) as! DetailCVCell
         
         cell.workIdx = self.workIdx
-        print("cell.workIdx", cell.workIdx) // 21
         cell.detailImg.image = appDelegate.detailList[self.workIdx!].posterImg
         self.detailLabel.text = appDelegate.detailList[self.workIdx!].explanation
         return cell
