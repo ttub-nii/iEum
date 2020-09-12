@@ -8,7 +8,5 @@ target 'iEum' do
   # Pods for iEum
 pod 'Alamofire', '~> 4.8.2'
 pod 'CHIPageControl', '~> 0.1.3'
-pod 'LCAnimatedPageControl'
 pod 'SwiftGifOrigin', '~> 1.7.0'
-pod 'Hero'
 end
