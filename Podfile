@@ -6,7 +6,6 @@ target 'iEum' do
   use_frameworks!
 
   # Pods for iEum
-pod 'Alamofire', '~> 4.8.2'
 pod 'CHIPageControl', '~> 0.1.3'
 pod 'SwiftGifOrigin', '~> 1.7.0'
 end

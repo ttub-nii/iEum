@@ -23,12 +23,8 @@
 		081179BF22DEEFE700D56611 /* iEum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081179BE22DEEFE700D56611 /* iEum.storyboard */; };
 		081179C122DEF01D00D56611 /* iEumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081179C022DEF01D00D56611 /* iEumVC.swift */; };
 		081179C322DEF33D00D56611 /* ieum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 081179C222DEF33D00D56611 /* ieum.gif */; };
-		0815060C236A8790004A68A0 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815060B236A8790004A68A0 /* LoginService.swift */; };
-		0815060E236A8951004A68A0 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815060D236A8951004A68A0 /* NetworkResult.swift */; };
-		08150610236C1066004A68A0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815060F236C1066004A68A0 /* APIConstants.swift */; };
 		08150612236C14ED004A68A0 /* ResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08150611236C14ED004A68A0 /* ResponseString.swift */; };
 		08447EE5236D5E8100A5F2F6 /* ResponseDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */; };
-		08447EE7236D5EC000A5F2F6 /* SignupSerive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08447EE6236D5EC000A5F2F6 /* SignupSerive.swift */; };
 		08B0873022DDB27100F16C99 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0872F22DDB27100F16C99 /* Banner.swift */; };
 		08B0873222DDB5B800F16C99 /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873122DDB5B800F16C99 /* WorkCell.swift */; };
 		08B0873422DEB1C200F16C99 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0873322DEB1C200F16C99 /* DetailCell.swift */; };
@@ -60,12 +56,8 @@
 		081179BE22DEEFE700D56611 /* iEum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iEum.storyboard; sourceTree = "<group>"; };
 		081179C022DEF01D00D56611 /* iEumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iEumVC.swift; sourceTree = "<group>"; };
 		081179C222DEF33D00D56611 /* ieum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ieum.gif; path = Assets.xcassets/ieum.gif; sourceTree = "<group>"; };
-		0815060B236A8790004A68A0 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
-		0815060D236A8951004A68A0 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
-		0815060F236C1066004A68A0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		08150611236C14ED004A68A0 /* ResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseString.swift; sourceTree = "<group>"; };
 		08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDefault.swift; sourceTree = "<group>"; };
-		08447EE6236D5EC000A5F2F6 /* SignupSerive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSerive.swift; sourceTree = "<group>"; };
 		08B0872F22DDB27100F16C99 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		08B0873122DDB5B800F16C99 /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
 		08B0873322DEB1C200F16C99 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
@@ -131,7 +123,6 @@
 		0809157A22DC482B004B59C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0815060A236A876B004A68A0 /* APIServices */,
 				0809158522DD9A7A004B59C6 /* Model */,
 				0809157D22DC4848004B59C6 /* Storyboard */,
 				0809157C22DC4842004B59C6 /* ViewControllers */,
@@ -189,17 +180,6 @@
 				08447EE4236D5E8100A5F2F6 /* ResponseDefault.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0815060A236A876B004A68A0 /* APIServices */ = {
-			isa = PBXGroup;
-			children = (
-				0815060B236A8790004A68A0 /* LoginService.swift */,
-				08447EE6236D5EC000A5F2F6 /* SignupSerive.swift */,
-				0815060F236C1066004A68A0 /* APIConstants.swift */,
-				0815060D236A8951004A68A0 /* NetworkResult.swift */,
-			);
-			path = APIServices;
 			sourceTree = "<group>";
 		};
 		5B5F1EF3A312DD21DB3FC6F5 /* Frameworks */ = {
@@ -342,21 +322,17 @@
 				08F4B71622E05E3500C4FEFC /* WriteViewController.swift in Sources */,
 				08074D4F22E54C96000724AE /* UIViewController+Extensions.swift in Sources */,
 				08B0873222DDB5B800F16C99 /* WorkCell.swift in Sources */,
-				0815060E236A8951004A68A0 /* NetworkResult.swift in Sources */,
 				0809158922DD9C61004B59C6 /* Work.swift in Sources */,
-				0815060C236A8790004A68A0 /* LoginService.swift in Sources */,
 				08B0873022DDB27100F16C99 /* Banner.swift in Sources */,
 				08150612236C14ED004A68A0 /* ResponseString.swift in Sources */,
 				081179C122DEF01D00D56611 /* iEumVC.swift in Sources */,
 				0809157F22DD5A0B004B59C6 /* MainViewController.swift in Sources */,
-				08150610236C1066004A68A0 /* APIConstants.swift in Sources */,
 				0809156E22DC47F1004B59C6 /* iEum.xcdatamodeld in Sources */,
 				0809156622DC47F1004B59C6 /* AppDelegate.swift in Sources */,
 				08074D4C22E54629000724AE /* Image.swift in Sources */,
 				08F4B71422E0577800C4FEFC /* ReplyTVC.swift in Sources */,
 				0809158B22DDAD40004B59C6 /* BannerCell.swift in Sources */,
 				08074D5122E5597E000724AE /* UIViewController+AppDelegate.swift in Sources */,
-				08447EE7236D5EC000A5F2F6 /* SignupSerive.swift in Sources */,
 				08447EE5236D5E8100A5F2F6 /* ResponseDefault.swift in Sources */,
 				08074D4A22E54588000724AE /* ImageCell.swift in Sources */,
 				08B0873622DEB24200F16C99 /* Detail.swift in Sources */,
